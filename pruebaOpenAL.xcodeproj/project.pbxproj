@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD026D4519C8A2D20054A52B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD026D4419C8A2D20054A52B /* Cocoa.framework */; };
+		CD026D4F19C8A2D20054A52B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD026D4D19C8A2D20054A52B /* InfoPlist.strings */; };
+		CD026D5119C8A2D20054A52B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD026D5019C8A2D20054A52B /* main.m */; };
+		CD026D5519C8A2D20054A52B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD026D5319C8A2D20054A52B /* Credits.rtf */; };
+		CD026D5819C8A2D20054A52B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD026D5719C8A2D20054A52B /* AppDelegate.m */; };
+		CD026D5B19C8A2D20054A52B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD026D5919C8A2D20054A52B /* MainMenu.xib */; };
+		CD026D5D19C8A2D20054A52B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD026D5C19C8A2D20054A52B /* Images.xcassets */; };
+		CD026D6419C8A2D20054A52B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD026D6319C8A2D20054A52B /* XCTest.framework */; };
+		CD026D6519C8A2D20054A52B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD026D4419C8A2D20054A52B /* Cocoa.framework */; };
+		CD026D7919C8A3630054A52B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD026D7819C8A3630054A52B /* OpenAL.framework */; };
+		CD026D7B19C8A4070054A52B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD026D7A19C8A4070054A52B /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD026D6619C8A2D20054A52B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD026D3919C8A2D20054A52B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD026D4019C8A2D20054A52B;
+			remoteInfo = PruebaOpenAl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD026D4119C8A2D20054A52B /* PruebaOpenAl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaOpenAl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD026D4419C8A2D20054A52B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CD026D4719C8A2D20054A52B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CD026D4819C8A2D20054A52B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD026D4919C8A2D20054A52B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD026D4C19C8A2D20054A52B /* PruebaOpenAl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PruebaOpenAl-Info.plist"; sourceTree = "<group>"; };
+		CD026D4E19C8A2D20054A52B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD026D5019C8A2D20054A52B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD026D5219C8A2D20054A52B /* PruebaOpenAl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PruebaOpenAl-Prefix.pch"; sourceTree = "<group>"; };
+		CD026D5419C8A2D20054A52B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CD026D5619C8A2D20054A52B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD026D5719C8A2D20054A52B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD026D5A19C8A2D20054A52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CD026D5C19C8A2D20054A52B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD026D6219C8A2D20054A52B /* PruebaOpenAlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaOpenAlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD026D6319C8A2D20054A52B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD026D7819C8A3630054A52B /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		CD026D7A19C8A4070054A52B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD026D3E19C8A2D20054A52B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD026D7B19C8A4070054A52B /* AudioToolbox.framework in Frameworks */,
+				CD026D7919C8A3630054A52B /* OpenAL.framework in Frameworks */,
+				CD026D4519C8A2D20054A52B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD026D5F19C8A2D20054A52B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD026D6519C8A2D20054A52B /* Cocoa.framework in Frameworks */,
+				CD026D6419C8A2D20054A52B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD026D3819C8A2D20054A52B = {
+			isa = PBXGroup;
+			children = (
+				CD026D4A19C8A2D20054A52B /* PruebaOpenAl */,
+				CD026D4319C8A2D20054A52B /* Frameworks */,
+				CD026D4219C8A2D20054A52B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD026D4219C8A2D20054A52B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD026D4119C8A2D20054A52B /* PruebaOpenAl.app */,
+				CD026D6219C8A2D20054A52B /* PruebaOpenAlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD026D4319C8A2D20054A52B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD026D7A19C8A4070054A52B /* AudioToolbox.framework */,
+				CD026D7819C8A3630054A52B /* OpenAL.framework */,
+				CD026D4419C8A2D20054A52B /* Cocoa.framework */,
+				CD026D6319C8A2D20054A52B /* XCTest.framework */,
+				CD026D4619C8A2D20054A52B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD026D4619C8A2D20054A52B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD026D4719C8A2D20054A52B /* AppKit.framework */,
+				CD026D4819C8A2D20054A52B /* CoreData.framework */,
+				CD026D4919C8A2D20054A52B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CD026D4A19C8A2D20054A52B /* PruebaOpenAl */ = {
+			isa = PBXGroup;
+			children = (
+				CD026D5619C8A2D20054A52B /* AppDelegate.h */,
+				CD026D5719C8A2D20054A52B /* AppDelegate.m */,
+				CD026D5919C8A2D20054A52B /* MainMenu.xib */,
+				CD026D5C19C8A2D20054A52B /* Images.xcassets */,
+				CD026D4B19C8A2D20054A52B /* Supporting Files */,
+			);
+			path = PruebaOpenAl;
+			sourceTree = "<group>";
+		};
+		CD026D4B19C8A2D20054A52B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD026D4C19C8A2D20054A52B /* PruebaOpenAl-Info.plist */,
+				CD026D4D19C8A2D20054A52B /* InfoPlist.strings */,
+				CD026D5019C8A2D20054A52B /* main.m */,
+				CD026D5219C8A2D20054A52B /* PruebaOpenAl-Prefix.pch */,
+				CD026D5319C8A2D20054A52B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD026D4019C8A2D20054A52B /* PruebaOpenAl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD026D7219C8A2D20054A52B /* Build configuration list for PBXNativeTarget "PruebaOpenAl" */;
+			buildPhases = (
+				CD026D3D19C8A2D20054A52B /* Sources */,
+				CD026D3E19C8A2D20054A52B /* Frameworks */,
+				CD026D3F19C8A2D20054A52B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PruebaOpenAl;
+			productName = PruebaOpenAl;
+			productReference = CD026D4119C8A2D20054A52B /* PruebaOpenAl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD026D6119C8A2D20054A52B /* PruebaOpenAlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD026D7519C8A2D20054A52B /* Build configuration list for PBXNativeTarget "PruebaOpenAlTests" */;
+			buildPhases = (
+				CD026D5E19C8A2D20054A52B /* Sources */,
+				CD026D5F19C8A2D20054A52B /* Frameworks */,
+				CD026D6019C8A2D20054A52B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD026D6719C8A2D20054A52B /* PBXTargetDependency */,
+			);
+			name = PruebaOpenAlTests;
+			productName = PruebaOpenAlTests;
+			productReference = CD026D6219C8A2D20054A52B /* PruebaOpenAlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD026D3919C8A2D20054A52B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					CD026D6119C8A2D20054A52B = {
+						TestTargetID = CD026D4019C8A2D20054A52B;
+					};
+				};
+			};
+			buildConfigurationList = CD026D3C19C8A2D20054A52B /* Build configuration list for PBXProject "pruebaOpenAL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = CD026D3819C8A2D20054A52B;
+			productRefGroup = CD026D4219C8A2D20054A52B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD026D4019C8A2D20054A52B /* PruebaOpenAl */,
+				CD026D6119C8A2D20054A52B /* PruebaOpenAlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD026D3F19C8A2D20054A52B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD026D4F19C8A2D20054A52B /* InfoPlist.strings in Resources */,
+				CD026D5D19C8A2D20054A52B /* Images.xcassets in Resources */,
+				CD026D5519C8A2D20054A52B /* Credits.rtf in Resources */,
+				CD026D5B19C8A2D20054A52B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD026D6019C8A2D20054A52B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD026D3D19C8A2D20054A52B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD026D5819C8A2D20054A52B /* AppDelegate.m in Sources */,
+				CD026D5119C8A2D20054A52B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD026D5E19C8A2D20054A52B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD026D6719C8A2D20054A52B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD026D4019C8A2D20054A52B /* PruebaOpenAl */;
+			targetProxy = CD026D6619C8A2D20054A52B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD026D4D19C8A2D20054A52B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD026D4E19C8A2D20054A52B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD026D5319C8A2D20054A52B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD026D5419C8A2D20054A52B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CD026D5919C8A2D20054A52B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD026D5A19C8A2D20054A52B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD026D7019C8A2D20054A52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD026D7119C8A2D20054A52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD026D7319C8A2D20054A52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PruebaOpenAl/PruebaOpenAl-Prefix.pch";
+				INFOPLIST_FILE = "PruebaOpenAl/PruebaOpenAl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD026D7419C8A2D20054A52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PruebaOpenAl/PruebaOpenAl-Prefix.pch";
+				INFOPLIST_FILE = "PruebaOpenAl/PruebaOpenAl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD026D7619C8A2D20054A52B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PruebaOpenAl.app/Contents/MacOS/PruebaOpenAl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PruebaOpenAl/PruebaOpenAl-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PruebaOpenAlTests/PruebaOpenAlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CD026D7719C8A2D20054A52B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PruebaOpenAl.app/Contents/MacOS/PruebaOpenAl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PruebaOpenAl/PruebaOpenAl-Prefix.pch";
+				INFOPLIST_FILE = "PruebaOpenAlTests/PruebaOpenAlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD026D3C19C8A2D20054A52B /* Build configuration list for PBXProject "pruebaOpenAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD026D7019C8A2D20054A52B /* Debug */,
+				CD026D7119C8A2D20054A52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD026D7219C8A2D20054A52B /* Build configuration list for PBXNativeTarget "PruebaOpenAl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD026D7319C8A2D20054A52B /* Debug */,
+				CD026D7419C8A2D20054A52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD026D7519C8A2D20054A52B /* Build configuration list for PBXNativeTarget "PruebaOpenAlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD026D7619C8A2D20054A52B /* Debug */,
+				CD026D7719C8A2D20054A52B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD026D3919C8A2D20054A52B /* Project object */;
+}
