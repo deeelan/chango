@@ -113,7 +113,7 @@ ALboolean LoadALData()
     
     alSourcei (Sources[POP_MUSIC], AL_BUFFER,   Buffers[POP_MUSIC]  );
     alSourcef (Sources[POP_MUSIC], AL_PITCH,    0.9f               );
-    alSourcef (Sources[POP_MUSIC], AL_GAIN,     0.125f                );
+    alSourcef (Sources[POP_MUSIC], AL_GAIN,     0.01f                );
     alSourcefv(Sources[POP_MUSIC], AL_POSITION, SourcesPos[POP_MUSIC]);
     alSourcefv(Sources[POP_MUSIC], AL_VELOCITY, SourcesVel[POP_MUSIC]);
     alSourcei (Sources[POP_MUSIC], AL_LOOPING,  AL_FALSE           );
@@ -167,22 +167,24 @@ int escenaUno()
 {
     alSourcePlay(Sources[INTRO]);
     
-    printf(" ▄▀▄▄▄▄   ▄▀▀▄ ▄▄   ▄▀▀█▄   ▄▀▀▄ ▀▄  ▄▀▀▀▀▄    ▄▀▀▀▀▄  \n█ █    ▌ █  █   ▄▀ ▐ ▄▀ ▀▄ █  █ █ █ █         █      █ \n▐ █      ▐  █▄▄▄█    █▄▄▄█ ▐  █  ▀█ █    ▀▄▄  █      █ \n  █         █   █   ▄▀   █   █   █  █     █ █ ▀▄    ▄▀ \n ▄▀▄▄▄▄▀   ▄▀  ▄▀  █   ▄▀  ▄▀   █   ▐▀▄▄▄▄▀ ▐   ▀▀▀▀   \n█     ▐   █   █    ▐   ▐   █    ▐   ▐                  \n▐         ▐   ▐            ▐                           ");
+    printf("\n ▄▀▄▄▄▄   ▄▀▀▄ ▄▄   ▄▀▀█▄   ▄▀▀▄ ▀▄  ▄▀▀▀▀▄    ▄▀▀▀▀▄  \n█ █    ▌ █  █   ▄▀ ▐ ▄▀ ▀▄ █  █ █ █ █         █      █ \n▐ █      ▐  █▄▄▄█    █▄▄▄█ ▐  █  ▀█ █    ▀▄▄  █      █ \n  █         █   █   ▄▀   █   █   █  █     █ █ ▀▄    ▄▀ \n ▄▀▄▄▄▄▀   ▄▀  ▄▀  █   ▄▀  ▄▀   █   ▐▀▄▄▄▄▀ ▐   ▀▀▀▀   \n█     ▐   █   █    ▐   ▐   █    ▐   ▐                  \n▐         ▐   ▐            ▐                           ");
     
     // Go through all the sources and check that they are playing.
     // Skip the first source because it is looping anyway (will always be playing).
     
     ALint state;
     
-    printf("\n\n\tPress ENTER to begin");
+    printf("\n\n\n\t\t\t\tPress ENTER to begin");
     getchar();
     
-    float t = 50.0f;
-    float d = 10.0f;
-    while(t > d)
+    float t = 10.0f;
+    float d = 0.1f;
+    while(t > 0)
     {
-        alSourcef(Sources[INTRO], AL_GAIN, 1.0f * (t / 10.0f));
+        alSourcef(Sources[INTRO], AL_GAIN, (t / 10.0f));
         t -= d;
+        printf("\n");
+        [NSThread sleepForTimeInterval:0.01f];
     }
     alSourceStop(Sources[INTRO]);
     
@@ -192,6 +194,21 @@ int escenaUno()
     
     while(1)//!kbhit())
     {
+        
+        double theta = (double) (rand() % 360) * 3.14 / 180.0;
+
+        SourcesPos[POP_MUSIC][0] = -(float)(cos(theta));
+        SourcesPos[POP_MUSIC][1] = -(float)(rand()%2);
+        SourcesPos[POP_MUSIC][2] = -(float)(sin(theta));
+        
+        NSLog(@"%@", @(SourcesPos[POP_MUSIC][0]).stringValue);
+        NSLog(@"%@", @(SourcesPos[POP_MUSIC][1]).stringValue);
+        NSLog(@"%@", @(SourcesPos[POP_MUSIC][2]).stringValue);
+        
+        alSourcefv(Sources[POP_MUSIC], AL_POSITION, SourcesPos[POP_MUSIC]);
+
+        //alSourcePlay(Sources[POP_MUSIC]);
+
         //        for(int i = 1; i < NUM_SOURCES; i++)
         //        {
         //            alGetSourcei(Sources[i], AL_SOURCE_STATE, &state);
